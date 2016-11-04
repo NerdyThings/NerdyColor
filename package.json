@@ -47,6 +47,10 @@
     "Color-Management",
     "Color-Conversion"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/NerdyThings/nerdy-color.git"
+  },
   "author": "Saleh Abdel Motaal <saleh@grasppe.com>",
   "license": "MIT",
   "devDependencies": {
