@@ -1,0 +1,58 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "0.1.0",
+    "isShellCommand": true,
+    "command": "zsh",
+    "suppressTaskName": true,
+    "echoCommand": true,
+    "args": [
+        "-c"
+    ],
+    "tasks": [
+        {
+            "taskName": "build",
+            "isBuildCommand": true,
+            "args": [
+                "npm build"
+            ],
+            "showOutput": "silent",
+            "problemMatcher": "$tsc"
+        },
+        {
+            "taskName": "compile-source",
+            "isBuildCommand": true,
+            "args": [
+                "npm run compile-source"
+            ],
+            "showOutput": "silent",
+            "problemMatcher": "$tsc"
+        },
+        {
+            "taskName": "compile-mocha",
+            "isBuildCommand": true,
+            "args": [
+                "npm run compile-mocha"
+            ],
+            "showOutput": "silent",
+            "problemMatcher": "$tsc"
+        },
+        {
+            "taskName": "build-dist",
+            "isBuildCommand": true,
+            "args": [
+                "npm run build-dist"
+            ],
+            "showOutput": "silent",
+            "problemMatcher": "$tsc"
+        },
+        {
+            "taskName": "test-nerdy-color",
+            "isTestCommand": true,
+            "args": [
+                "npm test"
+            ],
+            "showOutput": "always"
+        }
+    ]
+}

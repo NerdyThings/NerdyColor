@@ -1,0 +1,43 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+        "target": "es2015",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "isolatedModules": false,
+        "pretty": true,
+        "declaration": false,
+        "removeComments": false,
+        "preserveConstEnums": true,
+        "suppressImplicitAnyIndexErrors": false,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "strictNullChecks": true,
+        "noImplicitThis": false,
+        "noImplicitAny": true,
+        "allowJs": false,
+        "allowUnusedLabels": true,
+        "inlineSourceMap": true,
+        "inlineSources": true,
+        "lib": [
+            "es2017",
+            "es2016",
+            "es2015",
+            "es2015.proxy",
+            "es6",
+            "dom"
+        ],
+        "typeRoots": [ /*"../types"*/ /*"../typings"*/]
+    },
+    "include": [
+        "../typings/index.d.ts",
+        "../lib/types.d.ts",
+        ".././lib/decorators.ts",
+        "*-mocha.ts"
+    ],
+    "exclude": [
+        "node_modules",
+        "../node_modules",
+        "*-wallaby.ts"
+    ]
+}

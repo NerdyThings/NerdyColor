@@ -1,0 +1,60 @@
+{
+  "name": "nerdy-color",
+  "version": "1.0.0-Alpha.1",
+  "description": "A color processing library for JavaScript (and TypeScript) by Saleh Abdel Motaal",
+  "main": "nerdy-color.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "dev-test-watch": "mocha-typescript-watch",
+    "build": "tsc -p . --outFile ./dist/nerdy-color.js",
+    "build-dist": "npm run build-amd && npm run build-system && npm run build-umd && npm run build-commonjs",
+    "build-amd": "tsc -p . --outFile ./dist/amd/nerdy-color.js --module amd",
+    "build-system": "tsc -p . --outFile ./dist/commonjs/nerdy-color.js --module system",
+    "build-umd": "tsc -p . --outDir ./dist/umd --module umd",
+    "build-commonjs": "tsc -p . --outDir ./dist/commonjs --module umd",
+    "prepublish": "npm test && npm build && npm run build-dist ",
+    "compile-source": "tsc -p .",
+    "compile-mocha": "tsc -p ./test",
+    "pretest": "npm run compile-source && npm run compile-mocha",
+    "test": "mocha ./test/nerdy-color-mocha.js"
+  },
+  "keywords": [
+    "Color",
+    "Value",
+    "Parse",
+    "Mixer",
+    "Hex",
+    "RGB",
+    "CMYK",
+    "L*a*b*",
+    "Lab",
+    "CIELab",
+    "XYZ",
+    "CIEXYZ",
+    "Grayscale",
+    "Lookup-Table",
+    "LUT",
+    "Lightness",
+    "Brightness",
+    "Saturation",
+    "Hue",
+    "Hls",
+    "Hsv",
+    "Chromaticity",
+    "Transformation",
+    "Color-Management",
+    "Color-Conversion"
+  ],
+  "author": "Saleh Abdel Motaal <saleh@grasppe.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "jasmine": "^2.5.2",
+    "mocha": "^3.1.2",
+    "mocha-typescript": "^1.0.11",
+    "ts-node": "^1.6.1",
+    "typescript": "^2.1.0-dev.20161030"
+  }
+}

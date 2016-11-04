@@ -1,0 +1,13 @@
+{
+    "typescript.tsdk": "./node_modules/typescript/lib",
+    /**
+     * Tasks.
+     */
+    "task-master.enableGulp": false, // gulpfile.js
+    "task-master.enableNpm": true, // package.json
+    "task-master.enableShell": false,
+    "task-master.enablePython": false,
+    "task-master.enableRuby": false,
+    "task-master.enablePerl": false,
+    "task-master.enablePowershell": false,
+}
