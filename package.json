@@ -1,6 +1,6 @@
 {
   "name": "nerdy-color",
-  "version": "1.0.0-Alpha.1",
+  "version": "1.0.0-Alpha.2",
   "description": "A color processing library for JavaScript (and TypeScript) by Saleh Abdel Motaal",
   "main": "nerdy-color.js",
   "directories": {
