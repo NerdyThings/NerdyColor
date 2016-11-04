@@ -27,12 +27,14 @@
             "es6",
             "dom"
         ],
-        "typeRoots": [ /*"../types"*/ /*"../typings"*/]
+        "typeRoots": [
+            /* "../typings" */
+        ]
     },
     "include": [
-        "../typings/index.d.ts",
+        "../typings/globals/mocha/index.d.ts",
         "../lib/types.d.ts",
-        ".././lib/decorators.ts",
+        "../lib/decorators.ts",
         "*-mocha.ts"
     ],
     "exclude": [

@@ -1,5 +1,5 @@
 ///<amd-module name="NerdyColor"/>
-define("NerdyColor", ["require", "exports", "./nerdy-color-alpha"], function (require, exports, nerdy_color_alpha_1) {
+define("NerdyColor", ["require", "exports", './nerdy-color-alpha'], function (require, exports, nerdy_color_alpha_1) {
     "use strict";
     function __export(m) {
         for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
